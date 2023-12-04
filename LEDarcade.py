@@ -396,15 +396,15 @@ SpriteFillerRGB = (0,0,0)
 #Initialize Matrix objects
 options = RGBMatrixOptions()
 
-options.rows       = HatHeight
-options.cols       = HatWidth
+options.rows       = 32 #HatHeight
+options.cols       = 64 #HatWidth
 options.brightness = 100
 #stops sparkling 
-options.gpio_slowdown = 5
+options.gpio_slowdown = 2
 
 
-#options.chain_length = self.args.led_chain
-#options.parallel = self.args.led_parallel
+options.chain_length = 1 #self.args.led_chain
+options.parallel = 2 #self.args.led_parallel
 #options.row_address_type = self.args.led_row_addr_type
 #options.multiplexing = self.args.led_multiplexing
 #options.pwm_bits = self.args.led_pwm_bits
